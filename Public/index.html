@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <!-- <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/front.css?_cacheOverride=1774798464506"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css?_cacheOverride=1774798464506">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <img src="cloud_image.png" alt="Logo">
+        <h1>Weather Forecast</h1>
+    </div>
+    <h4>Checks the current weather and forecast for any city </h4>
+    <div class="search-box">
+      <input type="text" id="check" placeholder=" 🗺 Enter city to see the weather conditions ... " />
+      <button id="search">Search</button>
+    </div>
+
+    <section id="error-sec">
+      <div class="error">
+        <h2>City not found</h2>
+        <p>Please check the city name and try again.</p>
+      </div>
+    </section>
+
+    <section id="container1">
+      <div class="container2" >
+        <div class="city-card">
+            <div class="city-content">
+                <h2 id="search-city">New Delhi</h2>
+                <div class="date">
+                    <p><span id=date>Mon, 23 jun 2026 </span></p>
+                </div>
+            </div>
+            <div class="tempt">
+                <img id="sign" src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="sign-of">
+                <div>
+                  <h2><span id="tempr">34</span><span>℃</span></h2>
+                  <p id="news">Cloud</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="add-onn">
+    
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-thermometer-sun"></i>
+                <p>Feels like</p>
+              </div>
+              <span><span id="feels-like">85</span><span> ℃</span></span>
+            </div>
+
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-moisture"></i>
+                <p>Humidity</p>
+              </div>
+              <span><span id="humidity">90</span><span> %</span></span>
+            </div>
+
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-wind"></i>
+                <p>Wind Speed</p>
+              </div>
+              <span><span id="wind">70</span><span> km/h</span></span>
+            </div>
+
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-speedometer"></i>
+                <p>Pressure</p>
+              </div>
+              <span><span id="pressure">55</span><span> hPa</span></span>
+            </div>
+
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-cloud-rain-fill"></i>
+                <p>Chance of rain</p>
+              </div>
+              <span><span id="rain">55</span><span> %</span></span>
+            </div>
+
+            <div class="info-item">
+              <div class="icon">
+                <i class="bi bi-clouds-fill"></i>
+                <p>Clouds</p>
+              </div>
+              <span><span id="cloud">55</span><span> %</span></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="hero">
+        <h2 id="city">New Delhi</h2>
+        <p id="date">01/06/2006</p>
+        <div class="display">
+            <div class="main">
+                <img id="sign" src="" alt="sign-of">
+                <h2 id="temprature">34<span>℃</span></h2>
+                <p id="news">Cloud</p>
+            </div>
+            <div class="info">
+                <p id="humidity">Humidity:<span><strong>50</strong></span></p>
+                <p id="pressure">Pressure: 0 hPa</p>
+                <p id="wind">Wind: 0 km/h</p>
+                <p id="pressure">Pressure: 0 hPa</p>
+            </div>
+        </div>
+    </section> -->
+</body>
+<script src="index.js"></script>
+</html>
